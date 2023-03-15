@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dialogue Box</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="dialogue-box">
+		<h2>Are you dumb ?</h2>
+		<button class="button-okay" onclick="showMessage()">yes</button>
+		<button class="button-not-okay">No</button>
+	</div>
+	
+	<div class="dialogue-box message-box" id="messageBox">
+		<h2>I knew It</h2>
+    <button class="help" onclick="helpMessage()">!</button>
+	</div>
+  <div class="dialogue-box message-box help_box" id="helpBox">
+		<h2>It's a joke</h2>
+	</div>
+
+	<script>
+		function showMessage() {
+			var messageBox = document.getElementById("messageBox");
+			messageBox.style.display = "block";
+		}
+    function helpMessage(){
+      var helpBox = document.getElementById("helpBox");
+			helpBox.style.display = "block";
+    }
+	</script>
+</body>
+</html>
