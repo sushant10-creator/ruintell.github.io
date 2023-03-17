@@ -7,25 +7,48 @@
 <body>
 	<div class="dialogue-box">
 		<h2>Are you an alien ?</h2>
-		<button class="button-okay" onclick="showMessage()">Yes</button>
+		<button class="button-okay" onclick="showMessage()">yes</button>
 		<button class="button-not-okay">No</button>
 	</div>
+	
 	<div class="dialogue-box message-box" id="messageBox">
 		<h2>I knew It</h2>
-    	<button class="help" onclick="helpMessage()">!</button>
+    <button class="help" onclick="helpMessage()">!</button>
 	</div>
-  	<div class="dialogue-box message-box help_box" id="helpBox">
-		<h2>It's a joke. Now laugh 🤣</h2>
+  <div class="dialogue-box message-box help_box" id="helpBox">
+		<h2>Do you believe this is a joke</h2>
+    <button class="button-joke" onclick="showJokeMessage()">Yes</button>
+    <button class="button-nojoke" onclick="showNoJokeMessage()">No</button>
 	</div>
+  <div class="dialogue-box message-box help_box joke_box" id="jokeBox">
+		<h2>You are wrong</h2>
+<!--     <button class="go-back" onclick="goBack()">Take another chance</button> -->
+	</div>
+  <div class="dialogue-box message-box help_box no_joke_box" id="noJokeBox">
+		<h2>you are right</h2>
+	</div>
+
 	<script>
 		function showMessage() {
 			var messageBox = document.getElementById("messageBox");
 			messageBox.style.display = "block";
 		}
-		function helpMessage(){
-      			var helpBox = document.getElementById("helpBox");
+    function helpMessage(){
+      var helpBox = document.getElementById("helpBox");
 			helpBox.style.display = "block";
-    		}
+    }
+    function showJokeMessage(){
+      var jokeBox = document.getElementById("jokeBox");
+			jokeBox.style.display = "block";
+    }
+    function showNoJokeMessage(){
+      var noJokeBox = document.getElementById("noJokeBox");
+			noJokeBox.style.display = "block";
+    }
+			// function goBack(){
+			// var goBack = document.getElementById("helpBox");
+			// goBack.style.display = "block";
+			// }
 	</script>
 </body>
 </html>
