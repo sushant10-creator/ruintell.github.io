@@ -35,7 +35,7 @@
 }
 .button-not-okay:hover {
     position: relative;
-    left: 50px;
+    left: 75px;
     pointer-events: none;
 }
 .message-box {
