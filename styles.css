@@ -35,7 +35,7 @@
 }
 .button-not-okay:hover {
     position: relative;
-    left: 75px;
+    left: 50px;
     pointer-events: none;
 }
 .message-box {
@@ -58,3 +58,4 @@
 	font-size: 24px;
 	margin: 0 0 20px;
 }
+
