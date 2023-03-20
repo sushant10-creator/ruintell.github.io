@@ -34,9 +34,10 @@
     background-color: #3e8e41;
 }
 .button-not-okay:hover {
-    position: relative;
+	transform: translate(75px, -75px);
+/*     position: relative;
     left: 50px;
-    pointer-events: none;
+    pointer-events: none; */
 }
 .message-box {
 	display: none;
